@@ -1,6 +1,6 @@
 </div><br><br>
 
-<footer class="text-center" id="footer">&copy;Copyright 2016-2017 Shop Till You Drop!</footer>
+<footer class="text-center" id="footer">&copy;Copyright Shop Till You Drop!</footer>
 
 <script >
 function updateSizes(){
@@ -14,19 +14,24 @@ function updateSizes(){
 
 }
 
-	function get_child_options(){
+	function get_child_options(selected){
+		if (typeof selected ==='undefined') {
+			var selected='';
+	}
 		var parentID=jQuery('#parent').val();
 		jQuery.ajax({
 			url:'/E-Commerce/admin/parsers/child_categories.php',
 			type:'POST',
-			data:{parentID:parentID},
+			data:{parentID:parentID, selected:selected},
 			success:function(data){
 				jQuery('#child').html(data);
 			},
 			error:function(){alert("Something went wrong in child options")},
 		});
 	}
-	jQuery('select[name="parent"]').change(get_child_options);
+	jQuery('select[name="parent"]').change(function(){
+		get_child_options();
+	});
 </script>
 
 </body>

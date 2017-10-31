@@ -8,7 +8,7 @@ body{
 	margin:0;
 	overflow:hidden;
 	height:600px;
-	background-image:url(../images/headerlogo/background.png);
+	background-image:url(../images/headerlogo/background3.jpg);
 	background-repeat: no-repeat;
 	background-position: top-center;
 	background-attachment: fixed;
@@ -47,7 +47,7 @@ body{
 	margin:0;
 	overflow:hidden;
 	height:125px;
-	background-image:url(../images/headerlogo/background.png);
+	background-image:url(../images/headerlogo/background3.jpg);
 	background-repeat: no-repeat;
 	background-position: top-center;
 	background-attachment: fixed;
@@ -138,4 +138,17 @@ height:50%;
 	margin: 7% auto;
 	padding: 15px;
 	background-color: #fff;
+}
+.totals-table-header th{
+	text-align: center;
+}
+#cart_widget td, #recent_widget{
+	font-size: 12px;
+}
+input.price_range{
+	width:60px;
+}
+.saved-image img{
+	width:200px;
+	height: 200px;
 }

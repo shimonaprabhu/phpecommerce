@@ -7,10 +7,10 @@ if(mysqli_connect_errno()){
 session_start();
 require_once $_SERVER['DOCUMENT_ROOT'].'/E-Commerce/config.php';
 require_once BASEURL.'helpers/helpers.php';
-
+/*require BASEURL.'vendor/autoload.php';*/
 $cart_id='';
-if (isset($_COOKIE['CART_COOKIE'])) {
-	$cart_id=sanitize($_COOKIE['CART_COOKIE']);
+if (isset($_COOKIE[CART_COOKIE])) {
+	$cart_id=sanitize($_COOKIE[CART_COOKIE]);
 
 }
 

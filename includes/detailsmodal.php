@@ -63,8 +63,9 @@
                           $string_array = explode(':', $string);
                           $size = $string_array[0];
                           $available = $string_array[1];
+                          if($available>0){
                           echo '<option value="'.$size.'" data-available="'.$available.'">'.$size.' ('.$available.' available)</option>';
-                        } ?>
+                        } }?>
                       </select>
                     </div>
                   </div>

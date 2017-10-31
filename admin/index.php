@@ -7,6 +7,8 @@
 	include 'includes/navigation.php';
 
 ?>
-Administrator Home
+Welcome to the admin page!
+
+
 <?php include 'includes/footer.php';?>
 	
